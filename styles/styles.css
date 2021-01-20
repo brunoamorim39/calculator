@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+.copyright {
+    color: slategray;
+    font-size: 10px;
+    padding: 5px;
+}

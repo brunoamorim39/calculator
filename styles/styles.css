@@ -2,8 +2,9 @@
     margin: 0;
 }
 
-h1 {
+header {
     text-align: center;
+    padding: 30px 0 5px 0;
 }
 
 footer {
@@ -15,4 +16,118 @@ footer {
     color: slategray;
     font-size: 10px;
     padding: 5px;
+}
+
+.operators {
+    padding: 20px;
+    border: none;
+}
+
+.numbers {
+    padding: 20px;
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1fr, 6);
+    grid-template-rows: repeat(1fr, 6);
+    grid-gap: 5px;
+    padding: 20px;
+}
+
+.container > button {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    border: solid 1px gray;
+}
+
+#add {
+    grid-area: 3 / 5 / span 2 / span 1;
+}
+
+#subtract {
+    grid-area: 2 / 5 / span 1 / span 1;
+}
+
+#multiply {
+    grid-area: 2 / 4 / span 1 / span 1;
+}
+
+#divide {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+#equals {
+    grid-area: 5 / 5 / span 2 / span 1;
+}
+
+#nine {
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+#eight {
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+#seven {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#six {
+    grid-area: 4 / 4 / span 1 / span 1;;
+}
+
+#five {
+    grid-area: 4 / 3 / span 1 / span 1;;
+}
+
+#four {
+    grid-area: 4 / 2 / span 1 / span 1;;
+}
+
+#three {
+    grid-area: 5 / 4 / span 1 / span 1;;
+}
+
+#two {
+    grid-area: 5 / 3 / span 1 / span 1;;
+}
+
+#one {
+    grid-area: 5 / 2 / span 1 / span 1;;
+}
+
+#zero {
+    grid-area: 6 / 2 / span 1 / span 2;
+}
+
+#decimal {
+    grid-area: 6 / 4 / span 1 / span 1;
+}
+
+#clear {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#display {
+    grid-area: 1 / 2 / span 1 / span 4;
+    height: 24px;
+    resize: none;
+    text-align: end;
+    font-size: 48px;
+    padding: 24px 12px 48px 0;
+    background-color: whitesmoke;
+    border: solid 1px gray;
+}
+
+.empty-left {
+    grid-area: 1 / 1 / span 6 / span 1;
+    padding: 40px;
+}
+
+.empty-right {
+    grid-area: 1 / 6 / span 6 / span 1;
+    padding: 40px;
 }
